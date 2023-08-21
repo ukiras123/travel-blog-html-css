@@ -84,7 +84,7 @@
 .main-content {
   width: 66%;
 }
-.sid-links {
+.side-links {
   width: 34%;
 }
 
@@ -177,20 +177,62 @@ footer {
   text-align: center;
 }
 
-/* Media query 
-  type: all print screen speech
-*/
-/* min-width -> if you are doing mobile first design */
-/* max-width -> if you are doing desktop first design */
-
-@media (min-width: 400px) {
+/* iPad Breakpoint */
+@media (max-width: 768px) {
   .nav-bar {
-    background-color: green;
+    background-color: orange;
+    color: white;
+  }
+  .main-content {
+    width: 55%;
+  }
+  .sid-links {
+    width: 24%;
+  }
+  .main {
+    display: flex;
+    padding: 2rem;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  .art-img {
+    width: 250px;
+    margin-right: 10px;
   }
 }
 
-@media (min-width: 300px) {
-  .nav-bar {
-    background-color: rgb(38, 0, 128);
+@media (max-width: 580px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-links,
+  .main-content {
+    width: 100%;
+  }
+  .art-img {
+    width: 150px;
+    margin-right: 10px;
+  }
+}
+
+/* iPhone Breakpoint */
+@media (max-width: 350px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-links,
+  .main-content {
+    width: 100%;
+  }
+  .read-by-country,
+  .read-by-date {
+    /* padding: 2rem; */
+    /* margin: 2rem; */
+    background-color: chocolate;
+    border-radius: 5px;
   }
 }
