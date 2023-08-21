@@ -1,0 +1,60 @@
+/* min-width -> if you are doing mobile first design */
+/* max-width -> if you are doing desktop first design */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+h1 {
+  color: green;
+}
+h1::after {
+  content: "->Desktop";
+}
+
+/* // IPAD */
+@media (max-width: 800px) {
+  h1 {
+    color: purple;
+  }
+  h1::after {
+    content: "->IPAD";
+  }
+}
+
+/* // IPAD */
+@media (max-width: 400px) {
+  h1 {
+    color: rgb(128, 68, 0);
+  }
+  h1::after {
+    content: "->Phone";
+  }
+}
+/* 
+@media (min-width: 375px) {
+  h1 {
+    color: blue;
+  }
+  h1::after {
+    content: "->IPad";
+  }
+}
+
+@media (min-width: 775px) {
+  h1 {
+    color: pink;
+  }
+  h1::after {
+    content: "->Desktop";
+  }
+} */

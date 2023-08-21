@@ -176,3 +176,21 @@ footer {
   background-color: bisque;
   text-align: center;
 }
+
+/* Media query 
+  type: all print screen speech
+*/
+/* min-width -> if you are doing mobile first design */
+/* max-width -> if you are doing desktop first design */
+
+@media (min-width: 400px) {
+  .nav-bar {
+    background-color: green;
+  }
+}
+
+@media (min-width: 300px) {
+  .nav-bar {
+    background-color: rgb(38, 0, 128);
+  }
+}
